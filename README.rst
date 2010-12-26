@@ -10,6 +10,9 @@ For Ubuntu::
     sudo apt-get update
     sudo apt-get install python-pyside
 
+For other distributions, see here:
+http://developer.qt.nokia.com/wiki/PySideBinariesLinux
+
 Run FEMhub QT
 -------------
 
