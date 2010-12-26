@@ -9,6 +9,7 @@ app = QApplication(sys.argv)
 
 web = QWebView()
 web.load(QUrl("http://lab.femhub.org/"))
+web.setWindowTitle("FEMhub Desktop GUI")
 web.show()
 
 sys.exit(app.exec_())
