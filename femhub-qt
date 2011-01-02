@@ -5,26 +5,12 @@ from PySide.QtCore import QUrl
 from PySide.QtGui import QApplication
 from PySide.QtWebKit import QWebView, QWebPage
 
-# Some examples:
-url = "http://dev.sencha.com/deploy/touch/examples/kitchensink/"
-#url = "http://gmail.com/"
-# This doesn't work so well yet:
-#url = "http://lab.femhub.org/"
-
-class MyWebPage(QWebPage):
-
-    def userAgentForUrl(self, url):
-        # Pretend that we are running Nexus One:
-        return "Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+url = "http://lab.femhub.org/"
 
 app = QApplication(sys.argv)
 
 web = QWebView()
-web.setWindowTitle("Kitchen Sink")
-web.setPage(MyWebPage())
-# Make it look like Nexus
-scale = 0.64
-web.resize(480 * scale, 800 * scale)
+web.setWindowTitle("Femhub Desktop Application")
 web.load(QUrl(url))
 web.show()
 
