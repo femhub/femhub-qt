@@ -5,7 +5,11 @@ from PySide.QtCore import QUrl
 from PySide.QtGui import QApplication
 from PySide.QtWebKit import QWebView, QWebPage
 
+# Some examples:
 url = "http://dev.sencha.com/deploy/touch/examples/kitchensink/"
+#url = "http://gmail.com/"
+# This doesn't work so well yet:
+#url = "http://lab.femhub.org/"
 
 class MyWebPage(QWebPage):
 
