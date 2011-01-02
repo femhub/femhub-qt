@@ -19,7 +19,7 @@ web = QWebView()
 web.setWindowTitle("Kitchen Sink")
 web.setPage(MyWebPage())
 # Make it look like Nexus
-scale = 0.5
+scale = 0.64
 web.resize(480 * scale, 800 * scale)
 web.load(QUrl(url))
 web.show()
