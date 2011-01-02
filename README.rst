@@ -13,9 +13,11 @@ For Ubuntu::
 For other distributions, see here:
 http://developer.qt.nokia.com/wiki/PySideBinariesLinux
 
-Run FEMhub QT
--------------
+Install and Run FEMhub QT
+-------------------------
 
-In Ubuntu, in the current directory::
+In Ubuntu::
 
+    git clone git@github.com:femhub/femhub-qt.git
+    cd femhub-qt
     ./femhub-qt
