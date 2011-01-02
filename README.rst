@@ -22,8 +22,11 @@ In Ubuntu::
     cd femhub-qt
     ./femhub-qt
 
-This launches a Femhub desktop application (unfinished). To get some ideas how
-a finished application could look like, do from the same directory::
+This launches a Femhub desktop application (unfinished). It can take up to 10s
+to load, so just wait a little.
+
+To get some ideas how a finished application could look like, do from the same
+directory::
 
     ./desktop-app
 
