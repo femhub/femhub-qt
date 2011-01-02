@@ -8,8 +8,8 @@ from PySide.QtWebKit import QWebView
 app = QApplication(sys.argv)
 
 web = QWebView()
-web.load(QUrl("http://lab.femhub.org/"))
-web.setWindowTitle("FEMhub Desktop GUI")
+web.load(QUrl("http://jag.gr/tm"))
+web.setWindowTitle("TravelMate")
 web.show()
 
 sys.exit(app.exec_())
