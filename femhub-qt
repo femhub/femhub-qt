@@ -16,7 +16,8 @@ app = QApplication(sys.argv)
 web = QWebView()
 web.setWindowTitle("TravelMate")
 web.setPage(MyWebPage())
-web.load(QUrl("http://gmail.com/"))
+url = "http://dev.sencha.com/deploy/touch/examples/kitchensink/"
+web.load(QUrl(url))
 web.show()
 
 sys.exit(app.exec_())
