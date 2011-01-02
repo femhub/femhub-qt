@@ -5,6 +5,8 @@ from PySide.QtCore import QUrl
 from PySide.QtGui import QApplication
 from PySide.QtWebKit import QWebView, QWebPage
 
+url = "http://dev.sencha.com/deploy/touch/examples/kitchensink/"
+
 class MyWebPage(QWebPage):
 
     def userAgentForUrl(self, url):
@@ -14,9 +16,11 @@ class MyWebPage(QWebPage):
 app = QApplication(sys.argv)
 
 web = QWebView()
-web.setWindowTitle("TravelMate")
+web.setWindowTitle("Kitchen Sink")
 web.setPage(MyWebPage())
-url = "http://dev.sencha.com/deploy/touch/examples/kitchensink/"
+# Make it look like Nexus
+scale = 0.5
+web.resize(480 * scale, 800 * scale)
 web.load(QUrl(url))
 web.show()
 
